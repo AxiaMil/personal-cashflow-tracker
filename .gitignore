@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+*.local.js
+# builds: only the blank, public one is committed (Muse uses it)
+dist/*
+!dist/cashflow.html
+
+# dev-only local state written by tools/serve.mjs (/local/state)
+data/
+
+# your own setup, for reference when Muse asks
+*.local.json
